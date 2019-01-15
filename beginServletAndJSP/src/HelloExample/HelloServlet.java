@@ -10,16 +10,24 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HelloServlet extends HttpServlet{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
 		PrintWriter pw = resp.getWriter();
 		
-		String message = "Berkay Demirel";
+		String message = "Hello Servlet";
+		String message2 = "Berkay Demirel";
 		
 		pw.print("<html><body>");
 		pw.print(message);
+		pw.print("<br>");
+		pw.print(message2);
 		pw.print("</body></html>");
 		
 	}
