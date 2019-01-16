@@ -6,7 +6,6 @@
   		<servlet-name>HelloServletExample</servlet-name>
   		<servlet-class>HelloExample.HelloServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
   		<servlet-name>HelloServletExample</servlet-name>
   		<url-pattern>/HelloServlet</url-pattern>

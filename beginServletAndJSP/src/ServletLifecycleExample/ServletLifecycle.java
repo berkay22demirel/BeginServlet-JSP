@@ -26,14 +26,12 @@ public class ServletLifecycle extends HttpServlet {
 
 	@Override
 	public void destroy() {
-		
 		System.out.println("Start destroy method");
 		super.destroy();
 	}
 
 	@Override
 	public void init() throws ServletException {
-		
 		System.out.println("Start init method");
 	}
 	
