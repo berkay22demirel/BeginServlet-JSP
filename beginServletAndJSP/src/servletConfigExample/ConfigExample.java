@@ -1,4 +1,4 @@
-package ServletConfigExample;
+package servletConfigExample;
 
 import java.io.IOException;
 import java.io.PrintWriter;

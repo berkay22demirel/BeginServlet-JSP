@@ -1,4 +1,4 @@
-package ServletLifecycleExample;
+package servletLifecycleExample;
 
 import java.io.IOException;
 import java.io.PrintWriter;

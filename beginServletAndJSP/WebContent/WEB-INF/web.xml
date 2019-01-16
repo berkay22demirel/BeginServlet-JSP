@@ -2,9 +2,14 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>Hello Servlet</display-name>
   
+  <context-param>
+  		<param-name>contextParam</param-name>
+  		<param-value>Berkay Demirel Context</param-value>
+  </context-param>
+  
   <servlet>
   		<servlet-name>HelloServletExample</servlet-name>
-  		<servlet-class>HelloExample.HelloServlet</servlet-class>
+  		<servlet-class>servletHelloExample.HelloServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   		<servlet-name>HelloServletExample</servlet-name>
@@ -13,7 +18,7 @@
   
   <servlet>
   		<servlet-name>ServletLifecycleExample</servlet-name>
-  		<servlet-class>ServletLifecycleExample.ServletLifecycle</servlet-class>
+  		<servlet-class>servletLifecycleExample.ServletLifecycle</servlet-class>
   </servlet>
   <servlet-mapping>
   		<servlet-name>ServletLifecycleExample</servlet-name>
@@ -22,7 +27,7 @@
   
   <servlet>
   		<servlet-name>ServletConfigExample</servlet-name>
-  		<servlet-class>ServletConfigExample.ConfigExample</servlet-class>
+  		<servlet-class>servletConfigExample.ConfigExample</servlet-class>
   		
   		<init-param>
   			<param-name>username</param-name>
@@ -36,6 +41,20 @@
   <servlet-mapping>
   		<servlet-name>ServletConfigExample</servlet-name>
   		<url-pattern>/ServletConfig</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>ServletContextExample</servlet-name>
+  		<servlet-class>servletContextExample.ContextExample</servlet-class>
+  		
+  		<init-param>
+  			<param-name>configParam</param-name>
+  			<param-value>Berkay Demirel Config</param-value>
+  		</init-param>	
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletContextName</servlet-name>
+  		<url-pattern>/ServletContext</url-pattern>
   </servlet-mapping>
   
 </web-app>
