@@ -12,5 +12,14 @@
   		<url-pattern>/HelloServlet</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  		<servlet-name>ServletLifecycleExample</servlet-name>
+  		<servlet-class>ServletLifecycleExample.ServletLifecycle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletLifecycleExample</servlet-name>
+  		<url-pattern>/ServletLifecycle</url-pattern>
+  </servlet-mapping>
+  
   
 </web-app>
