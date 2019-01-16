@@ -20,5 +20,22 @@
   		<url-pattern>/ServletLifecycle</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  		<servlet-name>ServletConfigExample</servlet-name>
+  		<servlet-class>ServletConfigExample.ConfigExample</servlet-class>
+  		
+  		<init-param>
+  			<param-name>username</param-name>
+  			<param-value>Berkay Demirel</param-value>
+  		</init-param>
+  		<init-param>
+  			<param-name>url</param-name>
+  			<param-value>https://berkay22demirel.blogspot.com/</param-value>
+  		</init-param>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletConfigExample</servlet-name>
+  		<url-pattern>/ServletConfig</url-pattern>
+  </servlet-mapping>
   
 </web-app>
