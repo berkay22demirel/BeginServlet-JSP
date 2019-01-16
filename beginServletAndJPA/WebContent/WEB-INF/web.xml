@@ -58,4 +58,15 @@
   		<url-pattern>/ServletContext</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  		<servlet-name>ServletRequestExample</servlet-name>
+  		<servlet-class>servletRequestExample.RequestExample</servlet-class>	
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletRequestExample</servlet-name>
+  		<url-pattern>/RequestExample</url-pattern>
+  </servlet-mapping>
+  
+  
+  
 </web-app>
