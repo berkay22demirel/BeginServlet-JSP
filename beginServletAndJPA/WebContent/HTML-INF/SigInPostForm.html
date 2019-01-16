@@ -1,0 +1,47 @@
+<html>
+<body> 
+    <form id="siginform" action="/beginServletAndJPA/PostRequestExample" method="post">
+    <div>              
+    </div> 
+    <table id="table1" cellspacing="5px" cellpadding="5%";>
+       <tr>
+              <td align="right">Name:</td>
+              <td><input type="text" name="name" /></td>
+       </tr>
+       <tr>
+              <td align="right">Surname:</td>
+              <td><input type="text" name="surname" /></td>
+       </tr>
+        <tr>
+              <td align="right">Gender</td>
+              <td>
+			        <select name="gender">
+			            <option value="Male" selected="selected">Male</option>
+			            <option value="Female">Female</option>
+			         </select>
+     		   </td>
+       </tr>
+       <tr>
+              <td align="right">Age:</td>
+              <td><input type="text" name="age" /></td>
+       </tr>
+        <tr>
+              <td align="right">Languages</td>
+              <td>
+			        <input type="checkbox" name="languages" value="Java" /> Java
+			        <input type="checkbox" name="languages" value="C#" />C#
+			        <input type="checkbox" name="languages" value="C" />C
+			        <input type="checkbox" name="languages" value="C++" />C++
+			        <input type="checkbox" name="languages" value="Scala" /> Scala
+			        <input type="checkbox" name="languages" value="Python" />Python
+      		  </td>
+       </tr>        
+        <tr>
+        		<td> 
+        			<input type="submit" value="Submit"/> 
+        		</td>
+        </tr>
+</table> 
+    </form>
+</body>
+</html>

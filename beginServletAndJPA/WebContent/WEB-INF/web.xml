@@ -67,6 +67,13 @@
   		<url-pattern>/RequestExample</url-pattern>
   </servlet-mapping>
   
-  
+  <servlet>
+  		<servlet-name>ServletPostRequestExample</servlet-name>
+  		<servlet-class>servletRequestExample.PostRequestExample</servlet-class>	
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletPostRequestExample</servlet-name>
+  		<url-pattern>/PostRequestExample</url-pattern>
+  </servlet-mapping>
   
 </web-app>
