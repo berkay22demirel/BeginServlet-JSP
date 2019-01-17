@@ -8,6 +8,10 @@
   		<param-value>Berkay Demirel Context</param-value>
   	</context-param>
   	
+  	<listener>
+      <listener-class>servletListenerExample.ListenerExample</listener-class>
+ 	</listener>
+  	
   	<servlet>
   		<servlet-name>HelloServletExample</servlet-name>
   		<servlet-class>servletHelloExample.HelloServlet</servlet-class>
@@ -101,6 +105,15 @@
   <servlet-mapping>
   		<servlet-name>ServletAttributeExample</servlet-name>
   		<url-pattern>/AttributeExample</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>ServletListenerExample</servlet-name>
+  		<servlet-class>servletListenerExample.ListenerExample</servlet-class>	
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletListenerExample</servlet-name>
+  		<url-pattern>/ListenerExample</url-pattern>
   </servlet-mapping>
   
 </web-app>
