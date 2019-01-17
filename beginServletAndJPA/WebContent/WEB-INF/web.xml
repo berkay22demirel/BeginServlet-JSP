@@ -76,4 +76,22 @@
   		<url-pattern>/PostRequestExample</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  		<servlet-name>ServletResponseExample</servlet-name>
+  		<servlet-class>servletResponseExample.ResponseExample</servlet-class>	
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletResponseExample</servlet-name>
+  		<url-pattern>/ResponseExample</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>ServletCookieExample</servlet-name>
+  		<servlet-class>servletResponseExample.CookieExample</servlet-class>	
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletCookieExample</servlet-name>
+  		<url-pattern>/CookieExample</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
