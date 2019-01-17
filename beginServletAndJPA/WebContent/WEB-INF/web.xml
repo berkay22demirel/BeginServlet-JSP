@@ -94,4 +94,13 @@
   		<url-pattern>/CookieExample</url-pattern>
   </servlet-mapping>
   
+   <servlet>
+  		<servlet-name>ServletAttributeExample</servlet-name>
+  		<servlet-class>servletAttributeExample.AttributeExample</servlet-class>	
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletAttributeExample</servlet-name>
+  		<url-pattern>/AttributeExample</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
