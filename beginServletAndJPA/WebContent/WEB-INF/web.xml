@@ -116,4 +116,13 @@
   		<url-pattern>/ListenerExample</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  		<servlet-name>ServletCookie2Example</servlet-name>
+  		<servlet-class>servletCookieExample.CookieExample</servlet-class>	
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ServletCookie2Example</servlet-name>
+  		<url-pattern>/Cookie2Example</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
