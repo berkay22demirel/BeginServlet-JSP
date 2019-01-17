@@ -124,4 +124,12 @@
     <servlet-name>JSPLifecycle</servlet-name>
     <url-pattern>/jspLifecycle.jsp</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>JSPBeanExample</servlet-name>
+    <servlet-class>jspBeanExample.BeanExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JSPBeanExample</servlet-name>
+    <url-pattern>/BeanExample</url-pattern>
+  </servlet-mapping>
 </web-app>
