@@ -1,128 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  	
-  	<display-name>Hello Servlet</display-name>
-  	
-  	<context-param>
-  		<param-name>contextParam</param-name>
-  		<param-value>Berkay Demirel Context</param-value>
-  	</context-param>
-  	
-  	<listener>
-      <listener-class>servletListenerExample.ListenerExample</listener-class>
- 	</listener>
-  	
-  	<servlet>
-  		<servlet-name>HelloServletExample</servlet-name>
-  		<servlet-class>servletHelloExample.HelloServlet</servlet-class>
-  	</servlet>
-  	<servlet-mapping>
-  		<servlet-name>HelloServletExample</servlet-name>
-  		<url-pattern>/HelloServlet</url-pattern>
-  	</servlet-mapping>
-  	
-  	<servlet>
-  		<servlet-name>ServletLifecycleExample</servlet-name>
-  		<servlet-class>servletLifecycleExample.ServletLifecycle</servlet-class>
- 	 </servlet>
-  	<servlet-mapping>
-  		<servlet-name>ServletLifecycleExample</servlet-name>
-  		<url-pattern>/ServletLifecycle</url-pattern>
-  	</servlet-mapping>
-  	
-  	<servlet>
-  		<servlet-name>ServletConfigExample</servlet-name>
-  		<servlet-class>servletConfigExample.ConfigExample</servlet-class>
-  		
-  		<init-param>
-  			<param-name>username</param-name>
-  			<param-value>Berkay Demirel</param-value>
-  		</init-param>
-  		<init-param>
-  			<param-name>url</param-name>
-  			<param-value>https://berkay22demirel.blogspot.com/</param-value>
-  		</init-param>
-  </servlet>
-  <servlet-mapping>
-  		<servlet-name>ServletConfigExample</servlet-name>
-  		<url-pattern>/ServletConfig</url-pattern>
-  </servlet-mapping>
-  
+  <display-name>Hello Servlet</display-name>
+  <context-param>
+    <param-name>contextParam</param-name>
+    <param-value>Berkay Demirel Context</param-value>
+  </context-param>
+  <listener>
+    <listener-class>servletListenerExample.ListenerExample</listener-class>
+  </listener>
   <servlet>
-  		<servlet-name>ServletContextExample</servlet-name>
-  		<servlet-class>servletContextExample.ContextExample</servlet-class>
-  		
-  		<init-param>
-  			<param-name>configParam</param-name>
-  			<param-value>Berkay Demirel Config</param-value>
-  		</init-param>	
+    <servlet-name>HelloServletExample</servlet-name>
+    <servlet-class>servletHelloExample.HelloServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  		<servlet-name>ServletContextExample</servlet-name>
-  		<url-pattern>/ServletContext</url-pattern>
+    <servlet-name>HelloServletExample</servlet-name>
+    <url-pattern>/HelloServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
-  		<servlet-name>ServletRequestExample</servlet-name>
-  		<servlet-class>servletRequestExample.RequestExample</servlet-class>	
+    <servlet-name>ServletLifecycleExample</servlet-name>
+    <servlet-class>servletLifecycleExample.ServletLifecycle</servlet-class>
   </servlet>
   <servlet-mapping>
-  		<servlet-name>ServletRequestExample</servlet-name>
-  		<url-pattern>/RequestExample</url-pattern>
+    <servlet-name>ServletLifecycleExample</servlet-name>
+    <url-pattern>/ServletLifecycle</url-pattern>
   </servlet-mapping>
-  
   <servlet>
-  		<servlet-name>ServletPostRequestExample</servlet-name>
-  		<servlet-class>servletRequestExample.PostRequestExample</servlet-class>	
+    <servlet-name>ServletConfigExample</servlet-name>
+    <servlet-class>servletConfigExample.ConfigExample</servlet-class>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>Berkay Demirel</param-value>
+    </init-param>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>https://berkay22demirel.blogspot.com/</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
-  		<servlet-name>ServletPostRequestExample</servlet-name>
-  		<url-pattern>/PostRequestExample</url-pattern>
+    <servlet-name>ServletConfigExample</servlet-name>
+    <url-pattern>/ServletConfig</url-pattern>
   </servlet-mapping>
-  
   <servlet>
-  		<servlet-name>ServletResponseExample</servlet-name>
-  		<servlet-class>servletResponseExample.ResponseExample</servlet-class>	
+    <servlet-name>ServletContextExample</servlet-name>
+    <servlet-class>servletContextExample.ContextExample</servlet-class>
+    <init-param>
+      <param-name>configParam</param-name>
+      <param-value>Berkay Demirel Config</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
-  		<servlet-name>ServletResponseExample</servlet-name>
-  		<url-pattern>/ResponseExample</url-pattern>
+    <servlet-name>ServletContextExample</servlet-name>
+    <url-pattern>/ServletContext</url-pattern>
   </servlet-mapping>
-  
   <servlet>
-  		<servlet-name>ServletCookieExample</servlet-name>
-  		<servlet-class>servletResponseExample.CookieExample</servlet-class>	
+    <servlet-name>ServletRequestExample</servlet-name>
+    <servlet-class>servletRequestExample.RequestExample</servlet-class>
   </servlet>
   <servlet-mapping>
-  		<servlet-name>ServletCookieExample</servlet-name>
-  		<url-pattern>/CookieExample</url-pattern>
+    <servlet-name>ServletRequestExample</servlet-name>
+    <url-pattern>/RequestExample</url-pattern>
   </servlet-mapping>
-  
-   <servlet>
-  		<servlet-name>ServletAttributeExample</servlet-name>
-  		<servlet-class>servletAttributeExample.AttributeExample</servlet-class>	
-  </servlet>
-  <servlet-mapping>
-  		<servlet-name>ServletAttributeExample</servlet-name>
-  		<url-pattern>/AttributeExample</url-pattern>
-  </servlet-mapping>
-  
   <servlet>
-  		<servlet-name>ServletListenerExample</servlet-name>
-  		<servlet-class>servletListenerExample.ListenerExample</servlet-class>	
+    <servlet-name>ServletPostRequestExample</servlet-name>
+    <servlet-class>servletRequestExample.PostRequestExample</servlet-class>
   </servlet>
   <servlet-mapping>
-  		<servlet-name>ServletListenerExample</servlet-name>
-  		<url-pattern>/ListenerExample</url-pattern>
+    <servlet-name>ServletPostRequestExample</servlet-name>
+    <url-pattern>/PostRequestExample</url-pattern>
   </servlet-mapping>
-  
   <servlet>
-  		<servlet-name>ServletCookie2Example</servlet-name>
-  		<servlet-class>servletCookieExample.CookieExample</servlet-class>	
+    <servlet-name>ServletResponseExample</servlet-name>
+    <servlet-class>servletResponseExample.ResponseExample</servlet-class>
   </servlet>
   <servlet-mapping>
-  		<servlet-name>ServletCookie2Example</servlet-name>
-  		<url-pattern>/Cookie2Example</url-pattern>
+    <servlet-name>ServletResponseExample</servlet-name>
+    <url-pattern>/ResponseExample</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <servlet-name>ServletCookieExample</servlet-name>
+    <servlet-class>servletResponseExample.CookieExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletCookieExample</servlet-name>
+    <url-pattern>/CookieExample</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletAttributeExample</servlet-name>
+    <servlet-class>servletAttributeExample.AttributeExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAttributeExample</servlet-name>
+    <url-pattern>/AttributeExample</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletListenerExample</servlet-name>
+    <servlet-class>servletListenerExample.ListenerExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletListenerExample</servlet-name>
+    <url-pattern>/ListenerExample</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletCookie2Example</servlet-name>
+    <servlet-class>servletCookieExample.CookieExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletCookie2Example</servlet-name>
+    <url-pattern>/Cookie2Example</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>JSPLifecycle</servlet-name>
+    <jsp-file>/JSP-INF/jspLifecycle.jsp</jsp-file>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>Berkay Demirel</param-value>
+    </init-param>
+    <init-param>
+      <param-name>web site</param-name>
+      <param-value>www.berkay22demirel.blogspot.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JSPLifecycle</servlet-name>
+    <url-pattern>/jspLifecycle.jsp</url-pattern>
+  </servlet-mapping>
 </web-app>
