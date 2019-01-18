@@ -132,4 +132,12 @@
     <servlet-name>JSPBeanExample</servlet-name>
     <url-pattern>/BeanExample</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>JSPExpressionLanguage</servlet-name>
+    <servlet-class>jspExpressionLanguageExample.ExpressionLExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JSPExpressionLanguage</servlet-name>
+    <url-pattern>/JSPExpressionLanguageExample</url-pattern>
+  </servlet-mapping>
 </web-app>
