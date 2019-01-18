@@ -6,7 +6,7 @@ public class PersonModel {
 	String name;
 	String surname;
 	String gender;
-	int age;
+	String age;
 	String[] languages;
 
 	public String getName() {
@@ -33,11 +33,11 @@ public class PersonModel {
 		this.gender = gender;
 	}
 
-	public int getAge() {
+	public String getAge() {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 

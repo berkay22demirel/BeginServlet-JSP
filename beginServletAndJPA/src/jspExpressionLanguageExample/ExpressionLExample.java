@@ -15,11 +15,11 @@ public class ExpressionLExample extends HttpServlet {
 			throws ServletException, IOException {
 
 		PersonModel person1 = new PersonModel();
-		
+
 		person1.setName(req.getParameter("name"));
 		person1.setSurname(req.getParameter("surname"));
 		person1.setGender(req.getParameter("gender"));
-		person1.setAge(Integer.getInteger(req.getParameter("age")));
+		person1.setAge(req.getParameter("age"));
 		person1.setLanguages(req.getParameterValues("languages"));
 
 		req.setAttribute("person1", person1);
